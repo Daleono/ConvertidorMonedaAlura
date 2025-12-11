@@ -25,7 +25,6 @@ public class ConsultaMoneda {
             //return new Gson().fromJson(response.body(), Moneda.class);
 
             String json = response.body();
-            System.out.println(json);
 
             Gson gson = new Gson();
             Moneda moneda = gson.fromJson(json, Moneda.class);
